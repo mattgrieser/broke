@@ -1,0 +1,21 @@
+[build]
+# Build configuration for Swift iOS project
+target = "Broke"
+scheme = "Broke"
+configuration = "Debug"
+destination = "generic/platform=iOS"
+
+[watch]
+# Watch configuration for development
+watch_paths = ["Broke/**/*.swift", "Broke/**/*.xib", "Broke/**/*.storyboard"]
+ignore_paths = ["Broke.xcodeproj/**", "*.xcuserstate", "DerivedData/**"]
+
+[serve]
+# Serve configuration for development server
+port = 8080
+host = "localhost"
+
+[tools]
+# Required tools for building
+xcodebuild = "xcodebuild"
+simulator = "xcrun simctl" 

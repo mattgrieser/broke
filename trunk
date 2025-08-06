@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Trunk wrapper for Swift iOS development
+# This script provides a Trunk-like interface for Swift projects
+
+# Get the directory of this script
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Execute the trunk-swift.sh script with all arguments
+exec "$SCRIPT_DIR/trunk-swift.sh" "$@" 
